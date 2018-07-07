@@ -1,4 +1,4 @@
-package com.example.demo6;
+package com.example.demo7;
 
 /**
  * @author WJ
