@@ -4,7 +4,7 @@ package com.example.demo11;
  * @author WJ
  * @date 2018/07/07
  *
- *  * 面试题 8：旋转数组的最小数字
+ *  * 面试题 11：旋转数组的最小数字
  * 题目：
  *      把一个数组的最开始的若干元素搬到数组的末尾，我们称之为数组的旋转。
  *      输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。
@@ -35,7 +35,7 @@ package com.example.demo11;
  *                  则该元素属于第二个递增子数组，最小值位于 A 指针和折半位置之间，所以将 B 指向折半后的位置
  *         当 A 指针和 B 指针位置相同时，它们指向的元素就是最小值
  */
-public class Test11 {
+public class Demo11 {
     public static void main(String[] args) throws Exception {
         int[] arrays1 = {3, 4, 5, 1, 2};
         int[] arrays2 = {1, 0, 1, 1, 1};

@@ -4,7 +4,7 @@ package com.example.demo10;
  * @author WJ
  * @date 2018/07/06
  *
- * 面试题9：斐波那契数列
+ * 面试题 10：斐波那契数列
  * 题目一：
  *      写一个函数，输入 n，求斐波那契 (Fibonacci)数列的第 n 项。斐波那契数列的定义如下：
  *          f(n) = 0,                   n = 0
