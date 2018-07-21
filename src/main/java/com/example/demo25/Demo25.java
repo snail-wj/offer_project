@@ -5,6 +5,10 @@ import org.springframework.core.NestedExceptionUtils;
 /**
  * @author WJ
  * @date 2018/07/21
+ * 面试题25:合并两个排序的链表
+ *
+ * 题目:
+ * 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。
  */
 public class Demo25 {
 
