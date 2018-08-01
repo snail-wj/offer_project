@@ -12,7 +12,7 @@ package com.example.demo49;
  * 参考url:
  * https://blog.csdn.net/liyazhou0215/article/details/72812157
  */
-public class Demo49_1 {
+public class Demo49A {
 
     private static int getUglyNumber(int k) {
         if (k < 1) {
