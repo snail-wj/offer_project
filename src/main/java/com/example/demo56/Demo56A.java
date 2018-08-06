@@ -10,6 +10,7 @@ import java.util.Arrays;
  */
 public class Demo56A {
 
+    //TODO 这个需要看一下
     private static int[] findTwoNumOfApperanceOnce(int[] array) {
         int[] result = {0, 0};
 
