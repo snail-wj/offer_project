@@ -57,7 +57,7 @@ public class ConstructBinaryTree {
         }
         // 在中序遍历中找到根结点的索引
         int rootInIndex = startInIndex;
-        while (rootInIndex <= endInIndex && inOrder[rootInIndex] != rootValue) {
+        while (rootInIndex < endInIndex && inOrder[rootInIndex] != rootValue) {
             ++rootInIndex;
         }
         if (rootInIndex == endInIndex && inOrder[rootInIndex] != rootValue) {
