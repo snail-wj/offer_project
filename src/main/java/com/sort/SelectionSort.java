@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author WJ
  * @date 2018/08/29
- * 选择排序
+ * 2.选择排序
  * 动画参考url:https://www.cnblogs.com/onepixel/articles/7674659.html
  */
 public class SelectionSort {

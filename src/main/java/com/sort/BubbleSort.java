@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * @author WJ
  * @date 2018/08/28
- * 冒泡排序:相邻的两个元素，两两进行比较
+ * 1.冒泡排序:相邻的两个元素，两两进行比较
  * 动画参考url:https://www.cnblogs.com/onepixel/articles/7674659.html
  */
 public class BubbleSort {
