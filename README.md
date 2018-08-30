@@ -2,4 +2,4 @@
 
 **sort**:排序问题
 
-**coding_interiews**:冬天规划问题
+**coding_interiews**:动态规划问题
