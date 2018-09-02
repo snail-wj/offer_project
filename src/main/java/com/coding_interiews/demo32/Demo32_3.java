@@ -6,28 +6,30 @@ import java.util.Stack;
  * @author WJ
  * @date 2018/07/24
  * 面试题32_3:按之字形顺序打印二叉树
- *
+ * <p>
  * 题目:
  * 请实现一个函数按照之字型顺序打印二叉树，即第一行按照从左到右的顺序打印，
  * 第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
- *
+ * <p>
  * 参考url:
- *  https://blog.csdn.net/liyazhou0215/article/details/73457958
- *
+ * https://blog.csdn.net/liyazhou0215/article/details/73457958
+ * <p>
  * 思路:
- *  1. 使用两个栈协同工作
- *  2. 当遍历到奇数层时，先保存其右孩子到栈中，再保存其左孩子
- *     当遍历到偶数层时，先保存其左孩子到栈中，再保存其右孩子
- *    （打印后的元素立刻出栈，则刚进入到一个新的层时，其中的一个栈是空的，将新层中的元素的孩子保存到这个空栈中）
- *
+ * 1. 使用两个栈协同工作
+ * 2. 当遍历到奇数层时，先保存其右孩子到栈中，再保存其左孩子
+ * 当遍历到偶数层时，先保存其左孩子到栈中，再保存其右孩子
+ * （打印后的元素立刻出栈，则刚进入到一个新的层时，其中的一个栈是空的，将新层中的元素的孩子保存到这个空栈中）
+ * <p>
  * 考察点:
- *  层次遍历（广度优先遍历）不使用递归
- *  栈的应用
+ * 层次遍历（广度优先遍历）不使用递归
+ * 栈的应用
  */
 public class Demo32_3 {
 
     public static void snakePrint(BinaryTreeNode root) {
-        if (root == null) return;
+        if (root == null) {
+            return;
+        }
 
         //保存奇数层的元素
         Stack<BinaryTreeNode> stack1 = new Stack<>();
@@ -93,13 +95,13 @@ public class Demo32_3 {
         BinaryTreeNode root14 = new BinaryTreeNode(14);
         BinaryTreeNode root15 = new BinaryTreeNode(15);
 
-        root1.setChildNode(root2,root3);
-        root2.setChildNode(root4,root5);
-        root3.setChildNode(root6,root7);
-        root4.setChildNode(root8,root9);
-        root5.setChildNode(root10,root11);
-        root6.setChildNode(root12,root13);
-        root7.setChildNode(root14,root15);
+        root1.setChildNode(root2, root3);
+        root2.setChildNode(root4, root5);
+        root3.setChildNode(root6, root7);
+        root4.setChildNode(root8, root9);
+        root5.setChildNode(root10, root11);
+        root6.setChildNode(root12, root13);
+        root7.setChildNode(root14, root15);
 
         snakePrint(root1);
     }
