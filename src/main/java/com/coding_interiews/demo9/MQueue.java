@@ -40,7 +40,7 @@ public class MQueue<T> {
     public T deleteHead(){
         //子队列为空的时候，再次创造队列
         if(popStack.isEmpty()){
-            if(!pustStack.isEmpty()){
+            while (!pustStack.isEmpty()){
                 T top = pustStack.pop();
                 popStack.push(top);
             }
