@@ -28,7 +28,7 @@ public class Demo26 {
                 result = DoesTree1HavaTree2(root1, root2);
             }
             if(!result){
-                result = DoesTree1HavaTree2(root1.left, root2) || DoesTree1HavaTree2(root1.rigth, root2);
+                result = DoesTree1HavaTree2(root1.left, root2) || DoesTree1HavaTree2(root1.right, root2);
             }
         }
 
@@ -50,7 +50,7 @@ public class Demo26 {
             return false;
         }
 
-        return DoesTree1HavaTree2(root1.left, root2.left) && DoesTree1HavaTree2(root1.rigth, root2.rigth);
+        return DoesTree1HavaTree2(root1.left, root2.left) && DoesTree1HavaTree2(root1.right, root2.right);
     }
 
     public static void main(String[] args) {
@@ -62,17 +62,17 @@ public class Demo26 {
         BinaryTreeNode root6 = new BinaryTreeNode(5);
         BinaryTreeNode root7 = new BinaryTreeNode(7);
         root1.left = root2;
-        root1.rigth = root3;
+        root1.right = root3;
         root2.left = root4;
-        root2.rigth = root5;
+        root2.right = root5;
         root5.left = root6;
-        root5.rigth = root7;
+        root5.right = root7;
 
         BinaryTreeNode matchRoot1 = new BinaryTreeNode(8);
         BinaryTreeNode matchRoot2 = new BinaryTreeNode(9);
         BinaryTreeNode matchRoot3 = new BinaryTreeNode(2);
         matchRoot1.left = matchRoot2;
-        matchRoot1.rigth = matchRoot3;
+        matchRoot1.right = matchRoot3;
 
         System.out.println(hasSubTree(root1,matchRoot1));
         System.out.println(hasSubTree(root1,root1));
