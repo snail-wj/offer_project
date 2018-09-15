@@ -3,6 +3,7 @@ package com.array.binarySort;
 /**
  * @author WJ
  * @date 2018/9/15
+ * 给定一个有序的数组，查找最接近value且大于value的数的下标（如果该数存在多个，返回第一个下标），不存在返回-1。
  */
 public class BinarySearch_3 {
 
