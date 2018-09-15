@@ -1,11 +1,12 @@
-package com.array;
+package com.array.binarySort;
 
 /**
  * @author WJ
  * @date 2018/09/13
  * 二分查找:适用范围，对于一个数组已经排好了序
+ * 给定一个有序的数组，查找value是否在数组中，不存在返回-1。
  */
-public class BinarySearch {
+public class BinarySearch_1 {
 
     private static int binarySearch(int[] array, int key){
         int left = 0;
