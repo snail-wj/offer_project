@@ -19,7 +19,7 @@ public class Demo26 {
     public static boolean hasSubTree(BinaryTreeNode root1, BinaryTreeNode root2) {
 
         boolean result = false;
-        if (root1 == root2) {
+        if (root1 == root2 || root2 == null) {
             return true;
         }
 
