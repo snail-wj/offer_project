@@ -19,7 +19,7 @@ public class Demo26 {
     public static boolean hasSubTree(BinaryTreeNode root1, BinaryTreeNode root2) {
 
         boolean result = false;
-        if (root1 == root2) {
+        if (root1 == root2 || root2 == null) {
             return true;
         }
 
@@ -28,7 +28,7 @@ public class Demo26 {
                 result = DoesTree1HavaTree2(root1, root2);
             }
             if(!result){
-                result = DoesTree1HavaTree2(root1.left, root2) || DoesTree1HavaTree2(root1.rigth, root2);
+                result = hasSubTree(root1.left, root2) || hasSubTree(root1.rigth, root2);
             }
         }
 
@@ -68,9 +68,9 @@ public class Demo26 {
         root5.left = root6;
         root5.rigth = root7;
 
-        BinaryTreeNode matchRoot1 = new BinaryTreeNode(8);
-        BinaryTreeNode matchRoot2 = new BinaryTreeNode(9);
-        BinaryTreeNode matchRoot3 = new BinaryTreeNode(2);
+        BinaryTreeNode matchRoot1 = new BinaryTreeNode(2);
+        BinaryTreeNode matchRoot2 = new BinaryTreeNode(5);
+        BinaryTreeNode matchRoot3 = new BinaryTreeNode(7);
         matchRoot1.left = matchRoot2;
         matchRoot1.rigth = matchRoot3;
 

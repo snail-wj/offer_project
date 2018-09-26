@@ -75,7 +75,7 @@ public class Demo18_1 {
         temp3.nodeValue = 3;
         temp4.nodeValue = 4;
         temp5.nodeValue = 4;
-        temp6.nodeValue = 3;
+        temp6.nodeValue = 5;
         head.nextNode = temp1;
         temp1.nextNode = temp2;
         temp2.nextNode = temp3;
